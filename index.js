@@ -1,3 +1,12 @@
-console.log('default')
-import './index_01'
-import './index_02'
+const express = require("express");
+const path = require("path");
+
+const app = express();
+
+app.use(express.static(path.join(__dirname, "dist")));
+
+const port = process.env.PORT || 5000;
+
+app.listen(port, () => {
+  console.log(`app running on link http://localhost:{port}`);
+});

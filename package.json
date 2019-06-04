@@ -3,14 +3,26 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "source": {},
   "scripts": {
-    "dev": "parcel index.html",
-    "build": "parcel build index.html"
+    "localhost": "parcel src/index.html",
+    "dev": "npm run prestart && nodemon index.js",
+    "start": "node index.js",
+    "build": "parcel build ./src/index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/allaboardapps/parcel-test.git"
   },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/allaboardapps/parcel-test/issues"
+  },
+  "homepage": "https://github.com/allaboardapps/parcel-test#readme",
   "devDependencies": {
     "parcel-bundler": "^1.12.3"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
   }
 }
